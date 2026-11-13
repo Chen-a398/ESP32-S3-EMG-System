@@ -54,17 +54,6 @@
 - ESP32-S3(R8) 主控板与外部 Flash 的后续版本；更早的工程包含 ESP32-C3 版本。
 - 独立 ESP8266EX Wi-Fi 模块设计。项目目标描述了主控与 Wi-Fi 模块通过 UART 连接，并使用 UDP 传输。
 
-## 系统结构
-
-```mermaid
-flowchart LR
-  E[肌电电极与模拟前端\nINA333 + OPA333] --> A[ADS131M08\n8通道 ADC]
-  A --> M[ESP32-S3(R8)\n外接 XT25F16]
-  M <-->|UART| W[ESP8266EX Wi-Fi 模块]
-  W -->|UDP| H[接收端 / 上位机]
-```
-
-框图按工程器件和已知项目描述绘制；引脚映射、SPI/UART 参数、采样配置和 UDP 帧格式仍待从固件或实测资料确认。
 
 ## 已核实硬件
 
