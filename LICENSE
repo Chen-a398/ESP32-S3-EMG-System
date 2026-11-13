@@ -1,0 +1,7 @@
+This repository uses separate licenses for hardware and software:
+
+- Hardware design files in `hardware/`: CERN-OHL-W-2.0. See `LICENSE.hardware`.
+- Software source in `firmware/` and `examples/`: MIT. See `LICENSE.software`.
+- Documentation, photographs, and other files are not covered by either license unless their file or directory explicitly says so. Third-party materials retain their own licenses.
+
+Copyright holder: Chen-a398.
